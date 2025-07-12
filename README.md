@@ -1,43 +1,44 @@
-# analyzing-car-reviews-with-llms
+# 🤖 Analyzing Car Reviews with LLMs
 
+**Car-ing is Sharing** — an auto dealership company — is leveling up its customer experience using **Large Language Models (LLMs)**.
 
-# 🤖 Car-ing is Sharing - NLP Chatbot Prototype
-
-An end-to-end AI-powered chatbot prototype for *Car-ing is Sharing*, an auto dealership company, using **Large Language Models (LLMs)**.
-I've been asked to prototype a chatbot app with multiple functionalities that not only assist customers but also provide support to human agents in the company.
-
-The solution should receive textual prompts and use a variety of pre-trained Hugging Face LLMs to respond to a series of tasks, e.g. classifying the sentiment in a car’s text review, answering a customer question, summarizing or translating text, etc.
-
-## 📌 Project Features
-
-This solution uses Hugging Face Transformers to:
-
-- ✅ **Classify sentiment** in car reviews
-- 🌍 **Translate** English reviews to Spanish and evaluate with BLEU
-- ❓ **Answer questions** from car review context
-- 📝 **Summarize** lengthy car reviews
+As part of their AI/NLP team, this project prototypes a **chatbot assistant** powered by Hugging Face Transformers that can:
+- Assist customers
+- Support human agents
+- Analyze and respond to car reviews
 
 ---
 
-## 📁 Project Structure
+## 🔧 Features
 
+This project demonstrates real-world applications of LLMs:
 
+- ✅ **Sentiment Classification** – Understand customer feedback on car reviews
+- 🌍 **Machine Translation (EN → ES)** – Translate reviews into Spanish and evaluate with BLEU
+- ❓ **Question Answering** – Extract brand-related preferences from review content
+- 📝 **Summarization** – Generate concise summaries of long car reviews
 
-```analyzing-car-reviews-with-llms/
+---
+
+## 📂 Project Structure
+
+```plaintext
+analyzing-car-reviews-with-llms/
 │
 ├── data/
-│   ├── car_reviews.csv
-│   └── reference_translations.txt
+│   ├── car_reviews.csv                  # Car review dataset
+│   └── reference_translations.txt       # Spanish reference translations
 │
 ├── notebooks/
-│   └── 01_prototype_chatbot.ipynb
+│   └── 01_prototype_chatbot.ipynb       # Main LLM-powered chatbot notebook
 │
 ├── images/
-│   └── car.jpeg
+│   └── car.jpeg                         # Project image for README or UI
 │
-├── README.md
-├── requirements.txt
-└── .gitignore
+├── README.md                            # Project documentation
+├── requirements.txt                     # Python dependencies
+└── .gitignore                           # Ignored files and folders
+
 ```
 
 ## 🚀 Getting Started
@@ -50,7 +51,7 @@ cd analyzing-car-reviews-with-llms
 ```
 
 ### 2. Set up environment
-
+Install the required libraries
 ```bash
 pip install -r requirements.txt
 ```
