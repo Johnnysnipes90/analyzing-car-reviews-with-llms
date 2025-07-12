@@ -1,4 +1,4 @@
-![image](../images/car.jpeg)
+![image](images/car.jpeg)
 
 # 🤖 Analyzing Car Reviews with LLMs
 
