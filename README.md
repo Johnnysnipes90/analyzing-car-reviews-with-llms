@@ -1,3 +1,5 @@
+![image](images/car.jpeg)
+
 # 🤖 Analyzing Car Reviews with LLMs
 
 **Car-ing is Sharing** — an auto dealership company — is leveling up its customer experience using **Large Language Models (LLMs)**.
