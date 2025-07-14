@@ -1,45 +1,64 @@
-![image](images/car.jpeg)
+![Car Review AI Assistant](images/car.jpeg)
 
 # 🤖 Analyzing Car Reviews with LLMs
 
-**Car-ing is Sharing** — an auto dealership company — is leveling up its customer experience using **Large Language Models (LLMs)**.
+**Car-ing is Sharing** — a forward-thinking auto dealership company — is enhancing its customer service using **Large Language Models (LLMs)**.
 
-As part of their AI/NLP team, this project prototypes a **chatbot assistant** powered by Hugging Face Transformers that can:
-- Assist customers
-- Support human agents
+As part of their AI/NLP team, this project prototypes an intelligent **AI assistant** powered by Hugging Face Transformers. It can:
 - Analyze and respond to car reviews
+- Assist customers via natural language understanding
+- Support human agents with automation and insights
 
 ---
 
-## 🔧 Features
+## 🔧 Key Features
 
-This project demonstrates real-world applications of LLMs:
+This app demonstrates practical, production-ready use of LLMs:
 
-- ✅ **Sentiment Classification** – Understand customer feedback on car reviews
-- 🌍 **Machine Translation (EN → ES)** – Translate reviews into Spanish and evaluate with BLEU
-- ❓ **Question Answering** – Extract brand-related preferences from review content
-- 📝 **Summarization** – Generate concise summaries of long car reviews
+- ✅ **Sentiment Classification** – Detect positive or negative feedback in car reviews  
+- 🌍 **Translation (EN → ES)** – Translate customer reviews from English to Spanish with BLEU evaluation  
+- ❓ **Question Answering** – Answer questions based on the context of any review  
+- 📝 **Summarization** – Generate concise summaries of long car reviews  
 
 ---
+
+## 🖥️ Live Streamlit Web App
+
+> Easily interact with the assistant via an intuitive frontend.
+
+To launch the app:
+
+```bash
+streamlit run app/streamlit_app.py
+```
 
 ## 📂 Project Structure
 
 ```plaintext
 analyzing-car-reviews-with-llms/
 │
+├── app/
+│   └── streamlit_app.py               # Streamlit UI app
+│
+├── src/
+│   ├── sentiment.py                   # Sentiment classifier
+│   ├── translation.py                 # Translation function
+│   ├── summarization.py               # Text summarization
+│   └── question_answering.py          # QA module
+│
 ├── data/
-│   ├── car_reviews.csv                  # Car review dataset
-│   └── reference_translations.txt       # Spanish reference translations
+│   ├── car_reviews.csv                # Dataset of car reviews
+│   └── reference_translations.txt     # Reference Spanish translations
 │
 ├── notebooks/
-│   └── 01_prototype_chatbot.ipynb       # Main LLM-powered chatbot notebook
+│   └── 01_prototype_chatbot.ipynb     # LLM demonstration notebook
 │
 ├── images/
-│   └── car.jpeg                         # Project image for README or UI
+│   └── car.jpeg                       # Project image (used in README/UI)
 │
-├── README.md                            # Project documentation
-├── requirements.txt                     # Python dependencies
-└── .gitignore                           # Ignored files and folders
+├── README.md                          # Project documentation
+├── requirements.txt                   # Python dependencies
+└── .gitignore                         # Ignored files and folders
 
 ```
 
@@ -52,7 +71,7 @@ git clone https://github.com/your-username/analyzing-car-reviews-with-llms.git
 cd analyzing-car-reviews-with-llms
 ```
 
-### 2. Set up environment
+### 2. Install Dependencies
 Install the required libraries
 ```bash
 pip install -r requirements.txt
@@ -64,18 +83,22 @@ pip install -r requirements.txt
 jupyter notebook notebooks/01_prototype_chatbot.ipynb
 ```
 
-## 📦 Requirements
-```txt
-pandas
-transformers
-torch
-scikit-learn
-evaluate
-nltk
+### Launch the Streamlit App
+```bash
+streamlit run app/streamlit_app.py
 ```
 
+## 📦 Requirements
+```txt
+transformers
+evaluate
+scikit-learn
+pandas
+torch
+nltk
+streamlit
 
----
+```
 
 ## ✅ requirements.txt
 
@@ -100,5 +123,12 @@ __pycache__/
 ## ✨ Author
 
 Olalemi John Oluwatosin
-💼 LinkedIn :
-💻 GitHub: 
+💼 LinkedIn : www.linkedin.com/in/john-olalemi
+💻 GitHub: github.com/Johnnysnipes90
+
+## 🧠 Powered By
+- 🤗 Hugging Face Transformers
+
+- 🧠 Streamlit
+
+- 🐍 Python NLP ecosystem (scikit-learn, NLTK, Evaluate)
